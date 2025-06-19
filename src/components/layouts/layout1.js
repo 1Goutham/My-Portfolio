@@ -29,7 +29,7 @@ export default function One() {
         {/* Image */}
         <div className="w-full md:w-2/3 flex justify-center">
           <img
-            src="./images/Myphoto.png"
+            src="./images/illustration.png"
             alt="My-photo"
             className="h-[500px] md:h-[700px] object-contain"
           />
