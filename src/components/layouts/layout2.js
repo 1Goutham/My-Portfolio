@@ -47,12 +47,12 @@ export default function Two() {
 
       {/* Projects Section */}
       <div className="bg-black px-6">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center pt-16">
+        <div className="w-full flex flex-row lg:flex-row items-center justify-center pt-16">
           <div className="w-full lg:w-1/2 flex justify-center pb-8 lg:pb-32">
-            <img src="./images/project1.png" alt="project1" className="h-[300px] lg:h-[450px] object-contain" />
+            <img src="./images/project1.png" alt="project1" className="h-[350px] lg:h-[450px] object-contain" />
           </div>
           <div className="w-full lg:w-1/2 flex justify-center -translate-y-10 lg:-translate-y-32">
-            <img src="./images/project2.png" alt="project2" className="h-[350px] lg:h-[700px] object-contain" />
+            <img src="./images/project2.png" alt="project2" className="h-[500px] lg:h-[700px] object-contain" />
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export default function Two() {
         </div>
 
         <div className="flex justify-center">
-          <img src="./images/project3.png" alt="project3" className="h-[280px] lg:h-[450px] object-contain" />
+          <img src="./images/project3.png" alt="project3" className="h-[300px] lg:h-[450px] object-contain" />
         </div>
 
         <div className="flex justify-center">
@@ -72,23 +72,23 @@ export default function Two() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-20">
+        <div className="w-full flex flex-row lg:flex-row items-center justify-center mt-20">
           <div className="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
             <img src="./images/gravestone.png" alt="gravestone" className="h-[300px] lg:h-[400px] object-contain" />
           </div>
-          <div className="w-full lg:w-1/2 px-6 lg:px-10 text-center lg:text-left">
+          <div className="w-full lg:w-1/2 px-6 lg:px-10 text-left lg:text-left">
             <h1 className="text-white font-anon text-3xl lg:text-4xl">[Reach Out]</h1>
             <h1 className="text-white font-poppins font-medium text-xl lg:text-2xl mt-3">
               Let’s connect and build<br />something meaningful, together.
             </h1>
-            <p className="text-white font-poppins font-thin text-base mt-3">gouthamgopinath.tsi@gmail.com</p>
+            <p className="text-white font-poppins font-thin text-xs mt-3">gouthamgopinath.tsi@gmail.com</p>
           </div>
         </div>
       </div>
 
       {/* Footer */}
       <footer className="bg-white h-16 flex justify-center items-center px-4 text-center">
-        <h1 className="text-black font-poppins font-medium tracking-widest text-sm md:text-lg">
+        <h1 className="text-black font-poppins font-medium tracking-widest text-xs md:text-lg">
           © 2025 Goutham Gopinath • Full Stack Developer & Designer
         </h1>
       </footer>
