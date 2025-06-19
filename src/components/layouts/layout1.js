@@ -11,16 +11,18 @@ export default function One() {
         <div className="hidden lg:flex space-x-10 text-white font-inter tracking-widest text-sm mt-3">
           <span className="font-normal hover:text-neutral-500 transition-all cursor-pointer">HOME</span>
           <span className="font-thin">|</span>
-          <span className="font-normal hover:text-neutral-500 transition-all cursor-pointer">ABOUT ME</span>
+          <a href="#about" className="font-normal hover:text-neutral-500 transition-all cursor-pointer">ABOUT ME</a>
           <span className="font-thin">|</span>
-          <span className="font-normal hover:text-neutral-500 transition-all cursor-pointer">PROJECTS</span>
+          <a href="#projects" className="font-normal hover:text-neutral-500 transition-all cursor-pointer">PROJECTS</a>
           <span className="font-thin">|</span>
-          <span className="font-normal hover:text-neutral-500 transition-all cursor-pointer">RESUME</span>
+          <a href="/GouthamGresume.pdf" download className="font-normal hover:text-neutral-500 transition-all cursor-pointer">RESUME</a>
         </div>
         <div className="pt-4 lg:pe-8">
+          <a href="https://www.linkedin.com/in/goutham-g-98a0ba253/">
           <button className="text-black bg-white font-semibold font-inter tracking-widest text-sm w-24 h-8 rounded">
             CONTACT
           </button>
+          </a>
         </div>
       </nav>
 

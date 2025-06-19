@@ -2,7 +2,7 @@ export default function Two() {
   return (
     <div className="overflow-hidden">
       {/* About Section */}
-      <div className="w-full flex flex-row lg:flex-row ps-10 lg:ps-20">
+      <div id="about" className="w-full flex flex-row lg:flex-row ps-10 lg:ps-20">
         <div className="w-full lg:w-1/2 mt-8">
           <h1 className="text-black font-anon text-3xl lg:text-5xl">[About Me!]</h1>
 
@@ -46,7 +46,7 @@ export default function Two() {
       </div>
 
       {/* Projects Section */}
-      <div className="bg-black px-6">
+      <div id="projects" className="bg-black px-6">
         <div className="w-full flex flex-row lg:flex-row items-center justify-center pt-16">
           <div className="w-full lg:w-1/2 flex justify-center pb-8 lg:pb-32">
             <img src="./images/project1.png" alt="project1" className="h-[350px] lg:h-[450px] object-contain" />
@@ -65,10 +65,12 @@ export default function Two() {
         </div>
 
         <div className="flex justify-center">
+          <a href="https://www.behance.net/gouthamgopinath1">
           <button className="bg-white text-black w-40 md:w-48 mt-12 h-10 md:h-12 flex items-center justify-center space-x-2 rounded-full">
             <span className="text-base md:text-lg font-poppins">View More</span>
             <img src="./images/downarrow2.png" alt="arrow" className="h-2" />
           </button>
+          </a>
         </div>
 
         {/* Contact Section */}
