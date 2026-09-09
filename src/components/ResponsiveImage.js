@@ -16,7 +16,15 @@ export default function ResponsiveImage({
   className = "",
   priority = false,
 }) {
-  const { widths, width, height } = IMAGES[name];
+  const entry = IMAGES[name];
+  if (!entry) {
+    // Source artwork not generated yet – see README "Images".
+    if (process.env.NODE_ENV !== "production") {
+      console.warn(`ResponsiveImage: no variants for "${name}" in src/images.json`);
+    }
+    return null;
+  }
+  const { widths, width, height } = entry;
   const largest = widths[widths.length - 1];
   const srcSet = (ext) =>
     widths.map((w) => `${imagePath(`${name}-${w}.${ext}`)} ${w}w`).join(", ");

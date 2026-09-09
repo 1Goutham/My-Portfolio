@@ -20,11 +20,7 @@ const ABOUT_ITEMS = [
     ),
   },
   {
-    title: (
-      <>
-        Experience <span className="text-base font-light">+</span> Dev
-      </>
-    ),
+    title: "Experience",
     text: (
       <>
         Freelance Product Creator
@@ -45,51 +41,45 @@ export default function Two() {
       <section
         id="about"
         aria-labelledby="about-heading"
-        className="scroll-mt-4 overflow-hidden bg-white text-black"
+        className="scroll-mt-4 bg-black text-white"
       >
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:gap-6 lg:px-12 lg:py-24">
-          <div>
-            <h2 id="about-heading" className="font-anon text-3xl lg:text-5xl">
-              [About Me!]
-            </h2>
+        <div className="grid grid-cols-1 lg:h-screen lg:max-h-[960px] lg:min-h-[640px] lg:grid-cols-2">
+          <div className="flex items-center px-6 py-16 lg:py-12 lg:ps-24 lg:pe-16 xl:ps-32">
+            <div>
+              <h2 id="about-heading" className="font-anon text-3xl lg:text-5xl">
+                [About Me!]
+              </h2>
 
-            <div className="mt-8 lg:mt-10">
-              <h3 className="font-poppins text-xl lg:text-2xl">
-                Hey, I’m <span className="text-2xl font-medium lg:text-3xl">Goutham</span>
-              </h3>
-              <p className="mt-3 max-w-md font-poppins text-base font-light leading-relaxed">
-                – a fullstack dev with a creative edge. I believe good design makes
-                you stay, great UX makes you move, and smart code makes it all
-                possible.
-              </p>
-            </div>
-
-            {ABOUT_ITEMS.map((item, i) => (
-              <div key={i} className="mt-8">
-                <h3 className="font-poppins text-xl font-medium lg:text-2xl">{item.title}</h3>
-                <p className="mt-3 max-w-md font-poppins text-base font-light leading-relaxed">
-                  {item.text}
+              <div className="mt-8 lg:mt-10">
+                <h3 className="font-poppins text-xl font-medium lg:text-2xl">
+                  Hey, I’m <span className="text-2xl font-semibold lg:text-3xl">Goutham</span>
+                </h3>
+                <p className="mt-3 max-w-md font-poppins text-base font-light leading-relaxed text-neutral-300">
+                  – a fullstack dev with a creative edge. I believe good design makes
+                  you stay, great UX makes you move, and smart code makes it all
+                  possible.
                 </p>
               </div>
-            ))}
 
-            <div className="mt-8">
-              <h3 className="font-poppins text-xl font-medium lg:text-2xl">Core Stack</h3>
-              <ResponsiveImage
-                name="core-tools"
-                alt="React, Next.js, Tailwind CSS, Node.js, MongoDB and Figma"
-                sizes="300px"
-                className="mt-4 h-10 w-auto lg:h-11"
-              />
+              {ABOUT_ITEMS.map((item, i) => (
+                <div key={i} className="mt-8">
+                  <h3 className="font-poppins text-xl font-medium lg:text-2xl">{item.title}</h3>
+                  <p className="mt-3 max-w-md font-poppins text-base font-light leading-relaxed text-neutral-300">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          {/* Photo fills the right half edge to edge; object-cover keeps the
+              face framed while the column height changes with the viewport. */}
+          <div className="aspect-square w-full lg:aspect-auto lg:h-full">
             <ResponsiveImage
-              name="hand-drawn"
-              alt="Hand-drawn pencil sketch of an anime character"
-              sizes="(min-width: 1024px) 640px, (min-width: 640px) 520px, 90vw"
-              className="h-[320px] w-auto max-w-full object-contain sm:h-[500px] lg:h-[620px]"
+              name="about-photo"
+              alt="Scanned passport-style portrait of Goutham with handwritten notes"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="h-full w-full object-cover object-center"
             />
           </div>
         </div>

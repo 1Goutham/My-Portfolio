@@ -17,7 +17,7 @@ AVIF + WebP variants in `public/images/` (about 1.5 MB in total instead of 38 MB
 To add or replace artwork:
 
 1. Drop the full-resolution PNG in `assets/images-src/`.
-2. Register it in `IMAGES` inside `scripts/optimize-images.py` (which widths to emit)
-   and in `src/images.js` (same widths + the largest variant's dimensions).
-3. Run `pip install pillow && python3 scripts/optimize-images.py`.
+2. Register it in `IMAGES` inside `scripts/optimize-images.py` (which widths to emit).
+3. Run `pip install pillow && python3 scripts/optimize-images.py` – this writes the
+   variants and regenerates `src/images.json`.
 4. Render it with `<ResponsiveImage name="..." sizes="..." alt="..." />`.
