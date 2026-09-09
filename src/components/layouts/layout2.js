@@ -43,7 +43,7 @@ export default function Two() {
         aria-labelledby="about-heading"
         className="scroll-mt-4 bg-black text-white"
       >
-        <div className="grid grid-cols-1 lg:h-screen lg:max-h-[960px] lg:min-h-[640px] lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex items-center px-6 py-16 lg:py-12 lg:ps-24 lg:pe-16 xl:ps-32">
             <div>
               <h2 id="about-heading" className="font-anon text-3xl lg:text-5xl">
@@ -72,9 +72,9 @@ export default function Two() {
             </div>
           </div>
 
-          {/* Photo fills the right half edge to edge; object-cover keeps the
-              face framed while the column height changes with the viewport. */}
-          <div className="aspect-square w-full lg:aspect-auto lg:h-full">
+          {/* Photo fills the right half edge to edge. The column keeps the
+              photo's own aspect ratio, so nothing is cropped at any width. */}
+          <div className="aspect-[1277/1232] w-full">
             <ResponsiveImage
               name="about-photo"
               alt="Scanned passport-style portrait of Goutham with handwritten notes"

@@ -8,6 +8,14 @@
     "width": 1400,
     "height": 1447
   },
+  "about-photo": {
+    "widths": [
+      720,
+      1277
+    ],
+    "width": 1277,
+    "height": 1232
+  },
   "project1": {
     "widths": [
       300,
