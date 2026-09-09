@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Goutham G – fullstack developer and UI/UX designer. Bridging design to code."
+    />
+    <title>Goutham G · Fullstack Developer & UI/UX Designer</title>
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Fonts: connect early, then load only the weights that are used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hero portrait: start fetching before the JS bundle has even parsed.
+         Keep `imagesrcset`/`imagesizes` in sync with the hero <ResponsiveImage>. -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      imagesrcset="%PUBLIC_URL%/images/illustration-480.avif 480w, %PUBLIC_URL%/images/illustration-800.avif 800w, %PUBLIC_URL%/images/illustration-1400.avif 1400w"
+      imagesizes="(min-width: 1024px) 660px, (min-width: 768px) 560px, (min-width: 640px) 480px, 380px"
+      fetchpriority="high"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

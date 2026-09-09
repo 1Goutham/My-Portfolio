@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        anon: ['"Anonymous Pro"', 'monospace'],
+        poppins: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+        anon: ['"Anonymous Pro"', "ui-monospace", "SFMono-Regular", "monospace"],
       },
     },
   },
   plugins: [],
-}
+};
